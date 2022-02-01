@@ -30,8 +30,6 @@ const optimization = () => {
 
 const filenameJs = ext => isDev ? `js/[name].${ext}` : `js/[name].[contenthash].${ext}`;
 const filenameCss = ext => isDev ? `styles/[name].${ext}` : `styles/[name].[contenthash].${ext}`;
-//const filesImg = ext => isDev ? `images/[name].${ext}` : `images/[name].[contenthash].${ext}`;
-
 
 
 const cssLoaders = extra => {
@@ -117,7 +115,6 @@ module.exports = {
   optimization: optimization(),
   devServer: {
     historyApiFallback: true,
-    //contentBase: path.resolve(__dirname, './dist'),
     open: true,
     compress: true,
     hot: true,
@@ -138,25 +135,9 @@ module.exports = {
         test: /\.(s[ac]ss)$/,
         use: cssLoaders('sass-loader'),
       },
-      /*{
-        test: /\.svg$/,
-        use: [
-          {
-            loader: 'svg-inline-loader',
-          },
-        ],
-      },*/
       {
         test: /\.(?:jpg|jpeg|gif|png|ico|svg)$/i,
         type: 'asset/resource',
-        /*use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: filesImg('jpg'),
-            },
-          },
-        ],*/
       },
       {
         test: /\.(?:ttf|woff2|eot|otf)$/i,
