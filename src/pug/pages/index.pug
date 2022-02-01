@@ -1,0 +1,28 @@
+extends ../layout/default.pug 
+
+block title 
+    title Rotation Canvas
+
+block content 
+
+    section.section
+        .container 
+            .section_inner 
+                .section_content 
+                    .card
+                        span.card-icons 
+                            li.card-icons-setting 
+                        .card-img
+                            img.card-img-top(src="./assets/avatar.png", alt="logo") 
+                        .card-body 
+                            h1.card-title Jhon Doe 
+                            p.card-text online 
+                        input(id="rgl", type="range", min="100" max="1000")
+                        .card-footer 
+                            span.card-footer-plus speed
+                            span.card-footer-plus slow
+                    img.hidden(src="./assets/circle.png", alt="jet", id="goofyPic") 
+                    canvas(id="drawing", height="700", width="700").section_content_canvas 
+                        p.section_content_text Canvas not supported
+
+    

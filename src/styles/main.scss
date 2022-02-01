@@ -1,0 +1,46 @@
+@import '~normalize.css';
+@import '~bootstrap';
+@import 'fonts';
+@import 'variables';
+@import 'pagination';
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+body {
+    font-family: $font_1, sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-background: #F6F1F1;
+    -o-background: #F6F1F1;
+    -moz-background: #F6F1F1;
+    -ms-background: #F6F1F1;
+    background: #F6F1F1;
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 160rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 3rem;
+    -webkit-margin: 0 auto;
+    -o-margin: 0 auto;
+    -moz-margin: 0 auto;
+    -ms-margin: 0 auto;
+    margin: 0 auto;
+}
+
