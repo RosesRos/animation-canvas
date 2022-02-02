@@ -1,22 +1,23 @@
 
 .section {
-    -webkit-overflow: hidden;
-    -o-overflow: hidden;
-    -moz-overflow: hidden;
-    -ms-overflow: hidden;
     overflow: hidden;
     &_content {
-        -webkit-display: grid;
-        -o-display: grid;
-        -ms-display: grid;
-        -moz-display: grid;
-        display: grid;
-        -webkit-place-items: center;
-        -o-place-items: center;
-        -moz-place-items: center;
-        -ms-place-items: center;
-        place-items: center;
-
+        -webkit-display: flex;
+        -o-display: flex;
+        -ms-display: flex;
+        -moz-display: flex;
+        display: flex;
+        -webkit-justify-content: center;
+        -o-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -webkit-align-align-items: center;
+        -o-align-align-items: center;
+        -moz-align-align-items: center;
+        -ms-align-align-items: center;
+        align-items: center;
+        
         //canvas setting styles
         &_canvas {
             width: 70rem;
@@ -46,6 +47,7 @@
 
     //card setting styles
     .card {
+        overflow: hidden;
         position: absolute;
         max-width: 47rem;
         width: 100%;
@@ -55,6 +57,10 @@
         -moz-border-radius: 2rem;
         -ms-border-radius: 2rem;
         border-radius: 2rem;
+        -webkit-padding: 3rem;
+        -o-padding: 3rem;
+        -moz-padding: 3rem;
+        -ms-padding: 3rem;
         padding: 3rem;
         -webkit-background: #F6F1F1;
         -moz-background: #F6F1F1;
@@ -100,25 +106,27 @@
         }
         //setting for images
         &-img {
-            -webkit-display: grid;
-            -o-display: grid;
-            -moz-display: grid;
-            -ms-display: grid;
-            display: grid;
-            -webkit-place-items: center;
-            -moz-place-items: center;
-            -o-place-items: center;
-            -ms-place-items: center;
-            place-items: center;
+            -webkit-display: flex;
+            -o-display: flex;
+            -moz-display: flex;
+            -ms-display: flex;
+            display: flex;
+            -webkit-justify-content: center;
+            -o-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+            -webkit-place-align-items: center;
+            -moz-place-align-items: center;
+            -o-place-align-items: center;
+            -ms-place-align-items: center;
+            align-items: center;
             @media (max-width: $mobile-sm) {
-                place-items: start;
+                justify-content: flex-start;
             }
             &-top {
                 width: 15rem;
                 height: 15rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 @media (max-width: $mobile) {
                     width: 10rem;
                     height: 10rem;
@@ -131,16 +139,21 @@
         }
         //setting for body-card
         &-body {
-            -webkit-display: grid;
-            -o-display: grid;
-            -moz-display: grid;
-            -ms-display: grid;
-            display: grid;
-            -webkit-place-items: center;
-            -o-place-items: center;
-            -ms-place-items: center;
-            -moz-place-items: center;
-            place-items: center;
+            -webkit-display: flex;
+            -o-display: flex;
+            -moz-display: flex;
+            -ms-display: flex;
+            display: flex;
+            -webkit-place-align-items: center;
+            -o-place-align-items: center;
+            -ms-place-align-items: center;
+            -moz-place-align-items: center;
+            align-items: center;
+            -webkit-flex-direction: column;
+            -o-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
         }
         &-title {
             font-size: 3.6rem;
@@ -242,6 +255,10 @@
 //input seeting styles
 
 input {
+    -webkit-margin-top: 6rem;
+    -o-margin-top: 6rem;
+    -moz-margin-top: 6rem;
+    -ms-margin-top: 6rem;
     margin-top: 6rem;
     @media (max-width: $mobile) {
         margin-top: 2rem;

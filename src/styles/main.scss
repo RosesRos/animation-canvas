@@ -19,14 +19,22 @@ html {
 body {
     font-family: $font_1, sans-serif;
     font-size: 16px;
+    -webkit-display: flex;
+    -o-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
     display: flex;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
+    -o-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
     align-items: center;
-    -webkit-background: #F6F1F1;
-    -o-background: #F6F1F1;
-    -moz-background: #F6F1F1;
-    -ms-background: #F6F1F1;
-    background: #F6F1F1;
+    background: $backgroun-body;
     &.no-scroll{
         overflow: hidden;
     }
@@ -37,10 +45,6 @@ body {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 3rem;
-    -webkit-margin: 0 auto;
-    -o-margin: 0 auto;
-    -moz-margin: 0 auto;
-    -ms-margin: 0 auto;
     margin: 0 auto;
 }
 
